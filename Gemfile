@@ -5,11 +5,11 @@ gem 'mysql', :require => 'mysql'
 #gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Specify your favourite web server (only one).
-gem 'unicorn', :group => :development
-#gem 'mongrel', :group => :development
+# gem 'unicorn', :group => :development
+gem 'mongrel', :group => :development
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # If you are using s3 you probably want this gem:
 # gem 'aws-s3'
