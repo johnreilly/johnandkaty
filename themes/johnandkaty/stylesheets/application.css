@@ -1,0 +1,83 @@
+@import url('/stylesheets/refinery/application.css');
+/*  
+    Override default refinery application CSS below. 
+    Formatting applies to all frontend.
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#body_content_left {
+    width: 570px;
+}
+#body_content_right {
+    width: 300px;
+}
+#body_content_right img {
+    border: 3px solid #c7c7c7;
+}
+
+#body_content_left {
+  padding: 10px;
+}
+#body_content_right {
+  padding: 20px;
+  border: 1px solid #efefef;
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#page {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+#body, #header_content, #footer_content, #site_bar_content {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header_content {
+    position: relative;
+    height: 132px;
+}
+
+#header_content h1, #header_content #menu {
+    position: absolute;
+    bottom: 30px;
+    margin: 0px;
+}
+#header_content #menu {
+    right: 0px;
+    padding: 0px;
+}
+#menu li, #menu > a, #menu div {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+#menu li ul, #menu nav {
+    position: absolute;
+    left: -99999px;
+    padding: 0px;
+    margin: 0px;
+    min-width: 140px;
+    max-width: 300px;
+    background: white;
+}
+#menu li ul li, #menu nav a {
+    float: left;
+}
+#menu li:hover ul, #menu div:hover nav {
+    left: auto;
+}
+#footer {
+    margin-top: 120px;
+}
+#footer_content {
+    height: 103px;
+    padding-top: 94px;
+    text-align: right;
+}
