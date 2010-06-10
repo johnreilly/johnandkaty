@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript" charset="utf-8">
-      google.load("webfont", "1");
-      google.load("jquery", "1.4.2");
-      google.setOnLoadCallback(function() {
-        WebFont.load({
-          google: {
-            families: [ 'Josefin Sans Std Light', 'Cantarell' ]
-          }});
-      });
-    </script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cantarell" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <title><%= browser_title(yield(:title)) %></title>
     <%= render :partial => 'shared/google_analytics' unless local_request? %>
     <%= "<!--[if lt IE 9]>#{javascript_include_tag('http://html5shiv.googlecode.com/svn/trunk/html5.js')}<![endif]-->" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ %>
